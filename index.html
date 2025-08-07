@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - จัดการ Stock</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans">
+  <!-- เสื้อ -->
+  <div class="max-w-4xl mx-auto py-10">
+    <h1 class="text-3xl font-bold text-center text-green-700 mb-8">จัดการสินค้า ของที่ระลึกครบรอบ 30 ปี</h1>
+    <form class="bg-green-100 p-8 rounded shadow-md space-y-6">
+      <div>
+        <div class="flex items-center gap-4 mb-3">
+          <img
+            src="https://scontent.fcnx4-1.fna.fbcdn.net/v/t39.30808-6/522624981_737045899081213_6789078957936994482_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFz_9UbOxQ7krNZjz7labMK8JsEcjB7wRvwmwRyMHvBG7H1bt-MyiNQL-KrFwDEyGRczaGDIybZ_w2cskSM7z_p&_nc_ohc=_QxYKbFMMAEQ7kNvwF_jgSt&_nc_oc=Adl3-0FLJRpNATQ2pwA5uvRlp1Y-RVQMUiLuDqZjwiVddKwNWRB45AdMc9PjfulTdNlq5MEYvCE0rx8w6KGNcKZ8&_nc_zt=23&_nc_ht=scontent.fcnx4-1.fna&_nc_gid=l_nbKyjSoIsRfWcdNXelUg&oh=00_AfT-XwYYcrF5bpkRi___LTlG1gb-HA_VcFxdEwtYx3Fa2A&oe=689171CD"
+            class="w-20 h-20 object-cover rounded-md" alt="เสื้อ" />
+          <h2 class="text-2xl font-semibold text-green-800">เสื้อครบรอบ 30ปี CSMJU ตัวละ 320 บาท</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <select class="border-yellow-400 border p-2 rounded w-full bg-white focus:outline-none" required>
+              <option value="">-- เลือกสี --</option>
+              <option>ขาว</option>
+              <option>ดำ</option>
+            </select>
+          </div>
+          <div>
+            <select class="border-yellow-400  border p-2 rounded w-full bg-white focus:outline-none" required>
+              <option value="">-- ขนาด --</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>X</option>
+              <option>XL</option>
+              <option>2XL</option>
+              <option>3XL</option>
+            </select>
+          </div>
+          <input type="number" placeholder="จำนวน" class=" border-yellow-400 border p-2 rounded w-full" />
+        </div>
+      </div>
+
+      <!-- กระเป๋า -->
+      <div>
+        <div class="flex items-center gap-4 mb-3">
+          <img
+            src="https://scontent-bkk1-2.xx.fbcdn.net/v/t1.6435-9/43647275_289071388616739_763581916065562624_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFqP2hHtTS0km6CSHjpjpJYx25WEelOSo3HblYR6U5KjRH35kMeK7fvjXXdwfKH8h9KJG56IoRwaEi5_qsMHQwm&_nc_ohc=y25NUVhnmjoQ7kNvwHZIlUA&_nc_oc=AdnApkhq7hd42mkukH5ZFeD4sD-ucZZpHXDNlVzbCYs4xV4e1VNZvUlMzMG1AZx_0oM&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=-Joo18SoFbchkQxfCFhGpw&oh=00_AfU8U0B4Ld2y089mmSMcvU-dxN8lZqlwgG8BIiZhjOSRJg&oe=68BB7026"
+            class="w-20 h-20 object-cover rounded-md" alt="กระเป๋า" />
+          <h2 class="text-2xl font-semibold text-green-800">กระเป๋ากระสอบลาย MJU ใบละ 350 บาท</h2>
+        </div>
+        <input type="number" placeholder="จำนวน" class="border-yellow-400 border p-2 rounded w-full" />
+      </div>
+
+      <!-- แก้ว -->
+      <div>
+        <div class="flex items-center gap-4 mb-3">
+          <img src="https://bottle-perfect.com/wp-content/uploads/2021/01/OFF_1855.jpg"
+            class="w-20 h-20 object-cover rounded-md" alt="แก้ว" />
+          <h2 class="text-2xl font-semibold text-green-800">แก้วเก็บความเย็น งานหนักไม่เคยฆ่าคน แก้วละ 299</h2>
+        </div>
+        <input type="number" placeholder="จำนวน" class="border-yellow-400  border p-2 rounded w-full" />
+      </div>
+
+      <!-- อื่น ๆ -->
+      <div>
+        <div class="flex items-center gap-4 mb-3">
+          <img
+            src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/490354031_1226194526182547_4457389977279700913_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeF0d-8Vhw8tVXVDsJALGBD7Yu3PvPvnkfFi7c-8--eR8RMP3S82hEk4BiddNxfJ3vb8d--aN6a_-alo-0nxVIJk&_nc_ohc=QSRXDgL2xOIQ7kNvwE6R84x&_nc_oc=AdmA3p8IcctFDGlki6Fm5xEmoq-RYolN_DK0RYWFBz0j0rIgnAzssVDis6hPw2Amo28&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=nwC-yHSS6M7XnXiL0z_cng&oh=00_AfV49DnsAjZrfJSJ5WqiU6f7l5k7UeVpfwr00hhqzrD7Jg&oe=6899D42A"
+            class="w-20 h-20 object-cover rounded-md" alt="อื่นๆ" />
+          <h2 class="text-2xl font-semibold text-green-800">อื่นๆ </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <select class="border-yellow-400  border p-2 rounded w-full bg-white focus:outline-none" required>
+              <option value="">-- ชื่อสินค้า --</option>
+              <option>หมวก</option>
+              <option>ร่ม</option>
+              <option>เข็มกลัด</option>
+              <option>สมุด</option>
+              <option>ปาก</option>
+            </select>
+          </div>
+          <div>
+            <input type="text" placeholder="ราคา" class="border-yellow-400 border p-2 rounded w-full" />
+            <input type="number" placeholder="จำนวน" class="border-yellow-400  border p-2 rounded w-full mt-2" />
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center flex justify-center"> <button type="submit"
+          class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">ส่งคำสั่งซื้อ</button> </div>
+    </form>
+  </div>
+</body>
+
+</html>
